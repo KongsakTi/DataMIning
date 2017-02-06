@@ -1,0 +1,1031 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin/java -Didea.launcher.port=7536 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/tools.jar:/Users/Sam/Desktop/DataMining/D2/target/classes:/Users/Sam/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar:/Users/Sam/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain D2.App
+<!doctype html>
+<html class="esports-skin">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Esports Matches - DOTABUFF - Dota 2 Stats</title>
+  <link rel="stylesheet" media="all" href="/assets/application-97c381782ab1a877b3fab328fd55abcb9e4257ddda6a2df210f5ea0edfb13269.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.dotabuff.com/blog.rss">
+  <script src="/assets/application-2a8381973942a2c963f6a49c3eecaf3be182fc33702c5ac99757ecaaf91c5039.js"></script>
+  <script src="//kunkka.dotabuff.com/kunkka.js?t=esports" async></script>
+  <meta name="csrf-param" content="authenticity_token">
+  <meta name="csrf-token" content="UAXzl/diObpMODYEWBCS9mf7Vx9CarnPg2uwvaZDAGLNGh9vZShYRMuGqMZALe/nX4hBQC9A3wfeX3RnX6I21g==">
+  <meta name="keywords" content="dota 2 statistics, dota 2 stats, dota 2, statistics, dota, hero builds, guides">
+  <meta name="locale" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#242F39">
+  <meta property="og:title" content="Esports Matches">
+  <meta property="og:description" content="Dotabuff is the leading statistics and community website for Dota 2">
+  <meta property="og:image" content="https://www.dotabuff.com/assets/dotabuff-opengraph-1c415abafca15f69f682849462f6d239ed33298a1283ea9ee442820362336355.png">
+  <meta property="og:url" content="https://www.dotabuff.com/esports/matches?page=1">
+  <meta property="og:type" content="website">
+  <meta name="description" content="Dotabuff is the leading statistics and community website for Dota 2">
+  <link rel="icon" type="image/png" href="/assets/favicon-a6c9d750400872d536f8d3376a67851d3d5ee5a9b3d1beda17c66ab92ad62cdb.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicon-retina-d5a61fdd725d0d4a1469b880ebd0e36d782c47f27b395bea2551c8b7b0dea51a.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicon-ipad-993f82f47b26a766bfa652bfde6420c91ddd746c774c10bb90337b05b9823340.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicon-iphone-1e6ec36d4dec75ef88d10038359d8c4998f9fdfe1e867877754d23ac7db18629.png">
+  <link rel="alternate" hreflang="bg" href="//bg.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="cs" href="//cs.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="de" href="//de.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="en" href="//www.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="es" href="//es.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="fr" href="//fr.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="it" href="//it.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="ka" href="//ka.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="ko" href="//ko.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="pl" href="//pl.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="pt" href="//pt.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="ru" href="//ru.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="sr" href="//sr.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="tr" href="//tr.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="uk" href="//uk.dotabuff.com/esports/matches?page=1">
+  <link rel="alternate" hreflang="zh" href="//zh.dotabuff.com/esports/matches?page=1">
+  <link href="https://steamcdn-a.akamaihd.net" rel="preconnect" crossorigin="">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin="">
+  <link href="https://riki.dotabuff.com" rel="preconnect" crossorigin="">
+  <script type="text/javascript">window.showAds = true</script>
+  <script>var analytics_src = "https://www.google-analytics.com/analytics.js"; (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() { (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script',analytics_src,'ga'); ga("create", "UA-34232227-1", "auto"); ga("set", "forceSSL", true); ga("require", "ec"); ga("set", "page", "/esports_matches/index"); ga("set", "dimension2", "false"); ga("send", "pageview"); </script>
+ </head>
+ <body>
+  <div class="container-outer">
+   <div class="header-nav-primary">
+    <div class="container-inner">
+     <a class="header-menu-toggle" href="#"><i class="fa fa-bars"></i><span>DOTABUFF</span></a>
+     <a class="header-nav-logo" href="/">Dotabuff</a>
+     <nav class="header-nav-links">
+      <ul>
+       <li class=""><a class="r-only-tablet" href="/">Home</a></li>
+       <li class="active"><a data-target="#header-nav-secondary-collection-esports" class="color-esports js-has-children" href="/esports">Esports</a></li>
+       <li class=""><a data-target="#header-nav-secondary-collection-heroes" class="js-has-children" href="/heroes">Heroes</a></li>
+       <li class=""><a data-target="#header-nav-secondary-collection-items" class="js-has-children" href="/items">Items</a></li>
+       <li class=""><a data-target="#header-nav-secondary-collection-players" class="js-has-children" href="/players">Players</a></li>
+       <li class=""><a data-target="#header-nav-secondary-collection-matches" class="js-has-children" href="/matches">Matches</a></li>
+       <li class=""><a href="/blog">Blog</a></li>
+       <li class=""><a href="/forums/general">Forums</a></li>
+       <li class=""><a class="color-premium" href="/plus">Plus</a></li>
+      </ul>
+     </nav>
+     <div class="header-nav-right">
+      <div class="header-nav-search-input">
+       <form action="/search" accept-charset="UTF-8" method="get">
+        <input name="utf8" type="hidden" value="✓">
+        <input type="text" name="q" id="q" value="" size="48" autocomplete="off" spellcheck="false" placeholder="Search for heroes, items, players, leagues, teams...">
+        <input type="submit" name="commit" value="Search">
+        <p>You can <a href="/signin">Sign in with Steam</a> to see your Dota 2 profile.</p>
+       </form>
+      </div>
+      <a class="header-nav-search-toggle" href="#"><i class="fa fa-search"></i></a>
+      <nav class="header-nav-session">
+       <ul>
+        <li class=""><a href="/signin"><i class="fa fa-steam"></i>Sign In</a></li>
+       </ul>
+      </nav>
+     </div>
+    </div>
+   </div>
+   <div class="header-nav-secondary-collection active" id="header-nav-secondary-collection-esports">
+    <div class="container-inner">
+     <nav class="header-nav-links">
+      <ul>
+       <li class=""><a href="/esports">Esports</a></li>
+       <li class=""><a href="/esports/series">Series<span class="designation-new r-none-mobile">NEW!</span></a></li>
+       <li class=""><a href="/esports/scores">Scores</a></li>
+       <li class=""><a href="/esports/leagues">Leagues</a></li>
+       <li class=""><a href="/esports/players">Players</a></li>
+       <li class=""><a href="/esports/teams">Teams</a></li>
+       <li class="active"><a href="/esports/matches">Matches</a></li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+   <div class="header-nav-secondary-collection " id="header-nav-secondary-collection-heroes">
+    <div class="container-inner">
+     <nav class="header-nav-links">
+      <ul>
+       <li class=""><a href="/heroes">All Heroes</a></li>
+       <li class=""><a href="/heroes/meta">Meta</a></li>
+       <li class=""><a href="/heroes/trends">Trends</a></li>
+       <li class=""><a href="/heroes/lanes">Lanes</a></li>
+       <li class=""><a href="/heroes/played">Most Played</a></li>
+       <li class=""><a href="/heroes/winning">Win Rate</a></li>
+       <li class=""><a href="/heroes/impact">Game Impact</a></li>
+       <li class=""><a href="/heroes/economy">Economy</a></li>
+       <li class=""><a href="/heroes/farm">Farm</a></li>
+       <li class=""><a href="/heroes/damage">Damage and Healing</a></li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+   <div class="header-nav-secondary-collection " id="header-nav-secondary-collection-items">
+    <div class="container-inner">
+     <nav class="header-nav-links">
+      <ul>
+       <li class=""><a href="/items">Most Used</a></li>
+       <li class=""><a href="/items/winning">Win Rate</a></li>
+       <li class=""><a href="/items/impact">Game Impact</a></li>
+       <li class=""><a href="/items/economy">Economy</a></li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+   <div class="header-nav-secondary-collection " id="header-nav-secondary-collection-players">
+    <div class="container-inner">
+     <nav class="header-nav-links">
+      <ul>
+       <li class=""><a href="/players">Verified</a></li>
+       <li class=""><a href="/achievements">Achievements<span class="designation-new r-none-mobile">NEW!</span></a></li>
+       <li class=""><a href="/players/winning">Highest Win Rate</a></li>
+       <li class=""><a href="/players/played">Most Matches Played</a></li>
+       <li class=""><a href="/players/duration">Time Spent Playing</a></li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+   <div class="header-nav-secondary-collection " id="header-nav-secondary-collection-matches">
+    <div class="container-inner">
+     <nav class="header-nav-links">
+      <ul>
+       <li class=""><a class="color-esports" href="/esports">Live Matches</a></li>
+       <li class="active"><a class="color-esports" href="/esports/matches">Recent Esports Matches</a></li>
+       <li class=""><a href="/matches">Recent Matches</a></li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+   <div class="container-inner">
+    <div id="kunkka-top-leaderboard" class="kunkka-unit kunkka-leaderboard"></div>
+    <div class="header-content-container"></div>
+    <div class="content-inner">
+     <section>
+      <header>
+       Any Duration, Any Region
+      </header>
+      <footer>
+       <div class="filter  " data-filter-remote="yes">
+        <form method="get" action="">
+         <div class="settings">
+          <dl class="setting">
+           <dd>
+            <div class="select ">
+             <select id="duration" name="duration" class=""><option selected disabled value="">Duration</option><option value="">Any Duration</option> <option disabled value="separator1">────────</option> <option value="12-">&gt; 12 Min</option> <option value="20-">&gt; 20 Min</option> <option value="30-">&gt; 30 Min</option> <option value="40-">&gt; 40 Min</option> <option value="50-">&gt; 50 Min</option> <option value="60-">&gt; 60 Min</option> <option disabled value="separator2">────────</option> <option value="0-20">&lt; 20 Min</option> <option value="20-30">20 - 30 Min</option> <option value="30-40">30 - 40 Min</option> <option value="40-50">40 - 50 Min</option> <option value="50-60">50 - 60 Min</option></select>
+            </div>
+           </dd>
+          </dl>
+          <dl class="setting">
+           <dd>
+            <div class="select ">
+             <select id="region" name="region" class=""><option selected disabled value="">Region</option><option value="">Any Region</option> <option disabled value="separator">────────</option> <option value="us_west">US West</option> <option value="us_east">US East</option> <option value="europe_west">Europe West</option> <option value="south_korea">South Korea</option> <option value="se_asia">SE Asia</option> <option value="chile">Chile</option> <option value="australia">Australia</option> <option value="russia">Russia</option> <option value="europe_east">Europe East</option> <option value="south_america">South America</option> <option value="south_africa">South Africa</option> <option value="china">China</option> <option value="dubai">Dubai</option> <option value="peru">Peru</option> <option value="india">India</option></select>
+            </div>
+           </dd>
+          </dl>
+         </div>
+        </form>
+       </div>
+      </footer>
+      <article>
+       <table class="table table-striped table-condensed recent-esports-matches">
+        <thead>
+         <tr>
+          <th>League</th>
+          <th class="r-none-tablet"></th>
+          <th>Match ID</th>
+          <th class="r-none-mobile">Series</th>
+          <th class="r-none-mobile">Won</th>
+          <th class="r-none-mobile">Lost</th>
+          <th class="r-only-mobile">Teams</th>
+          <th>Duration</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935103144">2935103144</a><small class="block"><time datetime="2017-01-24T03:26:23+00:00" title="Tue, 24 Jan 2017 03:26:23 +0000" data-time-ago="2017-01-24T03:26:23+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192514">Series 192514</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/invoker-bf84310bc11bdd459011307e6b08fbd359e81e233923e5968836a7eedcb7a503.jpg">
+            <img class="img-icon" src="/assets/heroes/disruptor-b09196bbc7d501592b7c95b01260dfb5ae7bf5092a4e78011eb51c42a03308e6.jpg">
+            <img class="img-icon" src="/assets/heroes/sand-king-677af1a9e081b4995921d3d8e023afcaa5fe9ae555fc45e01a15acf0a5dbc401.jpg">
+            <img class="img-icon" src="/assets/heroes/juggernaut-5ff5b659184489f6a3a548de8dbd021dbb864698426b7d2550f41beb66bb45d8.jpg">
+            <img class="img-icon" src="/assets/heroes/nyx-assassin-0ddd37113e00efd948aba22f8d00b674e2032b41ea9a4c05d29a6a05e5f2f839.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/queen-of-pain-026a5d48deab540b9ea1b67cad1b8dfe842306df0340d6f386ad98a93b545600.jpg">
+            <img class="img-icon" src="/assets/heroes/mirana-bfced6be7e09aca2def54c36a85aa09c4fe24c0b86303b06815ddcfdf584a097.jpg">
+            <img class="img-icon" src="/assets/heroes/luna-fc878724cecefe8fb0f7d70ed19a57e9e892449d8999b7ea48b026cb9e7ca85b.jpg">
+            <img class="img-icon" src="/assets/heroes/faceless-void-25c1dc477c2a37e6f7d50b0cbe9998663a36c62d1ebed0abf2c88f525d722c46.jpg">
+            <img class="img-icon" src="/assets/heroes/vengeful-spirit-53c9afa695ee2c961da207dad6dfca38cde5cf5b70c458b02f320b7b1d3e9968.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="radiant winner">Unknown</span>
+           </div>
+           <div>
+            <span class="dire">Unknown</span>
+           </div></td>
+          <td>35:42
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 65.80645161290323%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T03:26:23+00:00" title="Tue, 24 Jan 2017 03:26:23 +0000" data-time-ago="2017-01-24T03:26:23+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/3284/banner.png" alt="DotA Athletes - Summer Slam" title="DotA Athletes - Summer Slam" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/3284/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/3284">DotA Athletes - Summer Slam</a></td>
+          <td><a href="/matches/2935090035">2935090035</a><small class="block"><time datetime="2017-01-24T03:25:14+00:00" title="Tue, 24 Jan 2017 03:25:14 +0000" data-time-ago="2017-01-24T03:25:14+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192512">Series 192512</a><small class="block">Unknown</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant"><img alt="" title="Prodigy" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3657556/tooltip" src="https://riki.dotabuff.com/t/l/8GJWSthhG4.png"><span>Prodigy</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/monkey-king-861c9d6971a1a07eee7df237e1d1d5c9c81c64d2a8a96dff03d544274f94e9ea.jpg">
+            <img class="img-icon" src="/assets/heroes/mirana-bfced6be7e09aca2def54c36a85aa09c4fe24c0b86303b06815ddcfdf584a097.jpg">
+            <img class="img-icon" src="/assets/heroes/anti-mage-5707d88922e32502db4e80b7e68c2b1e0d26fbdb1abe437092ebe6fc7fa2da41.jpg">
+            <img class="img-icon" src="/assets/heroes/pudge-26ef8b6938086abf2edb2b4f9aebccf6f14bd20bae3962d1585e735929b2ba17.jpg">
+            <img class="img-icon" src="/assets/heroes/jakiro-1909630a71adb094cd5b2afad1b92e386df3edc7f49a7397747d3a51f84614b1.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire"><img alt="" title="MeepMerp" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2921893/tooltip" src="https://riki.dotabuff.com/t/l/WIY69kyZX6.png"><span>MeepMerp</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/meepo-feadffb3c2f720bac7ca55e5e08096759537bfa727cc28cce9dc58538533568b.jpg">
+            <img class="img-icon" src="/assets/heroes/weaver-8fdd43f5d122a395e0b8479908c387b76b6a5ced1d9d36d32b298236d2fd87e3.jpg">
+            <img class="img-icon" src="/assets/heroes/sand-king-677af1a9e081b4995921d3d8e023afcaa5fe9ae555fc45e01a15acf0a5dbc401.jpg">
+            <img class="img-icon" src="/assets/heroes/drow-ranger-9a129fdff680762bc97a2cb5bb43fbd96811150ff80b6092438a554fca47a1c3.jpg">
+            <img class="img-icon" src="/assets/heroes/invoker-bf84310bc11bdd459011307e6b08fbd359e81e233923e5968836a7eedcb7a503.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Prodigy" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3657556/tooltip" src="https://riki.dotabuff.com/t/l/8GJWSthhG4.png">
+            <span class="radiant winner"><span>Prodigy</span></span>
+           </div>
+           <div>
+            <img alt="" title="MeepMerp" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2921893/tooltip" src="https://riki.dotabuff.com/t/l/WIY69kyZX6.png">
+            <span class="dire"><span>MeepMerp</span></span>
+           </div></td>
+          <td>48:20
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 89.0937019969278%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T03:25:14+00:00" title="Tue, 24 Jan 2017 03:25:14 +0000" data-time-ago="2017-01-24T03:25:14+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/5026/banner.png" alt="AD2L Season 14" title="AD2L Season 14" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/5026/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/5026">AD2L Season 14</a></td>
+          <td><a href="/matches/2935092530">2935092530</a><small class="block"><time datetime="2017-01-24T03:18:43+00:00" title="Tue, 24 Jan 2017 03:18:43 +0000" data-time-ago="2017-01-24T03:18:43+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192513">Series 192513</a><small class="block">US East</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant"><img alt="" title="Western Wolves 2.0" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3725500/tooltip" src="https://riki.dotabuff.com/t/l/EphMy16MdQ.png"><span>Western Wolves 2.0</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/axe-388d58b177bffa44367ab04b03c7c81e767d50da5fd4c5a3d9dfd3113ffe7bd0.jpg">
+            <img class="img-icon" src="/assets/heroes/phantom-assassin-9ede63e7fcb4765e4c5f0cc28174513a1e3171a49295aaa8f552f1f20c241a87.jpg">
+            <img class="img-icon" src="/assets/heroes/sniper-acba09aef6873c5735dd388a5be8bd1206211f3948106e322d282a65f8b84437.jpg">
+            <img class="img-icon" src="/assets/heroes/warlock-1555fccd7fd6cace17b753adc4fcb888aa9caf55ed2ab8b6836c92dacdcecddd.jpg">
+            <img class="img-icon" src="/assets/heroes/pudge-26ef8b6938086abf2edb2b4f9aebccf6f14bd20bae3962d1585e735929b2ba17.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire"><img alt="" title="We Make Bad Decisions" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2416685/tooltip" src="https://riki.dotabuff.com/t/l/QixNBhZcEt.png"><span>We Make Bad Decisions</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/mirana-bfced6be7e09aca2def54c36a85aa09c4fe24c0b86303b06815ddcfdf584a097.jpg">
+            <img class="img-icon" src="/assets/heroes/dragon-knight-d654091a561ae140309b4c07b47077dcd92f7c687e427f02f794026dc84cad6d.jpg">
+            <img class="img-icon" src="/assets/heroes/tidehunter-63d0d0b2531011d59a0ea3fe32ebbf59106f985c6684bd5955e1e4d5f50f794f.jpg">
+            <img class="img-icon" src="/assets/heroes/crystal-maiden-d9d7e6cbea64990c492bd3adc66c3d6f738c9f229301f5284e43a318a1da9829.jpg">
+            <img class="img-icon" src="/assets/heroes/drow-ranger-9a129fdff680762bc97a2cb5bb43fbd96811150ff80b6092438a554fca47a1c3.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Western Wolves 2.0" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3725500/tooltip" src="https://riki.dotabuff.com/t/l/EphMy16MdQ.png">
+            <span class="radiant winner"><span>Western Wolves 2.0</span></span>
+           </div>
+           <div>
+            <img alt="" title="We Make Bad Decisions" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2416685/tooltip" src="https://riki.dotabuff.com/t/l/QixNBhZcEt.png">
+            <span class="dire"><span>We Make Bad Decisions</span></span>
+           </div></td>
+          <td>39:10
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 72.19662058371736%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T03:18:43+00:00" title="Tue, 24 Jan 2017 03:18:43 +0000" data-time-ago="2017-01-24T03:18:43+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935085394">2935085394</a><small class="block"><time datetime="2017-01-24T03:12:31+00:00" title="Tue, 24 Jan 2017 03:12:31 +0000" data-time-ago="2017-01-24T03:12:31+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192511">Series 192511</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/rubick-96df563c54e035adbc89d75afc1d65867ac5ee1159ac26e395e5265addf9e3f9.jpg">
+            <img class="img-icon" src="/assets/heroes/luna-fc878724cecefe8fb0f7d70ed19a57e9e892449d8999b7ea48b026cb9e7ca85b.jpg">
+            <img class="img-icon" src="/assets/heroes/ogre-magi-bbd70011b89a269c249c8bd23d89deca65dcf126ba907946d596743b08ddc469.jpg">
+            <img class="img-icon" src="/assets/heroes/underlord-a73da5478ea37b1b8513ecae91c1b0488edd2e01c254b4aa0227637d1ae49410.jpg">
+            <img class="img-icon" src="/assets/heroes/queen-of-pain-026a5d48deab540b9ea1b67cad1b8dfe842306df0340d6f386ad98a93b545600.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/zeus-7c48a5be8113f547f9357e8557c7d5a1de24240f47fe95112b53cfa90d2fa690.jpg">
+            <img class="img-icon" src="/assets/heroes/magnus-8660119e38039f6c3c7400032a92337c2592d8816bb97e227f4e30ed0aeca24c.jpg">
+            <img class="img-icon" src="/assets/heroes/vengeful-spirit-53c9afa695ee2c961da207dad6dfca38cde5cf5b70c458b02f320b7b1d3e9968.jpg">
+            <img class="img-icon" src="/assets/heroes/sniper-acba09aef6873c5735dd388a5be8bd1206211f3948106e322d282a65f8b84437.jpg">
+            <img class="img-icon" src="/assets/heroes/axe-388d58b177bffa44367ab04b03c7c81e767d50da5fd4c5a3d9dfd3113ffe7bd0.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="radiant winner">Unknown</span>
+           </div>
+           <div>
+            <span class="dire">Unknown</span>
+           </div></td>
+          <td>40:46
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 75.14592933947773%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T03:12:31+00:00" title="Tue, 24 Jan 2017 03:12:31 +0000" data-time-ago="2017-01-24T03:12:31+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4342/banner.png" alt="The Invitacional" title="The Invitacional" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4342/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4342">The Invitacional</a></td>
+          <td><a href="/matches/2935063613">2935063613</a><small class="block"><time datetime="2017-01-24T03:01:46+00:00" title="Tue, 24 Jan 2017 03:01:46 +0000" data-time-ago="2017-01-24T03:01:46+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192499">Series 192499</a><small class="block">South America</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire"><img alt="" title="Pure Touch Me Rats" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2734862/tooltip" src="https://riki.dotabuff.com/t/l/acbTKnraBa.png"><span>Pure Touch Me Rats</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/storm-spirit-ba540ac6a89be049c3a33520c8384c9d441c6be06be3275972aa8d6159b82740.jpg">
+            <img class="img-icon" src="/assets/heroes/riki-1ba286123c6322b7b1a36a3e29a9807fa7eb598b9d3141727fdf12be0cf21729.jpg">
+            <img class="img-icon" src="/assets/heroes/luna-fc878724cecefe8fb0f7d70ed19a57e9e892449d8999b7ea48b026cb9e7ca85b.jpg">
+            <img class="img-icon" src="/assets/heroes/sand-king-677af1a9e081b4995921d3d8e023afcaa5fe9ae555fc45e01a15acf0a5dbc401.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-demon-920404f34046ed7f4a0b00027a0f8f21f0a578c7730928cd5f6d90f877f0aeb0.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant"><img alt="" title="Unforgiven^" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/806020/tooltip" src="https://riki.dotabuff.com/t/l/NEOATyYGIw.png"><span>Unforgiven^</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/dark-seer-ce0393cbf76eee6f96fe732958bf824e0da5c6ac1457df1dd6efbe07f4bf495b.jpg">
+            <img class="img-icon" src="/assets/heroes/mirana-bfced6be7e09aca2def54c36a85aa09c4fe24c0b86303b06815ddcfdf584a097.jpg">
+            <img class="img-icon" src="/assets/heroes/lone-druid-41daa2009bd00ec57aecab78797142c52b1480ae60c151bb2f4107397a6287fd.jpg">
+            <img class="img-icon" src="/assets/heroes/rubick-96df563c54e035adbc89d75afc1d65867ac5ee1159ac26e395e5265addf9e3f9.jpg">
+            <img class="img-icon" src="/assets/heroes/ogre-magi-bbd70011b89a269c249c8bd23d89deca65dcf126ba907946d596743b08ddc469.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Pure Touch Me Rats" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2734862/tooltip" src="https://riki.dotabuff.com/t/l/acbTKnraBa.png">
+            <span class="dire winner"><span>Pure Touch Me Rats</span></span>
+           </div>
+           <div>
+            <img alt="" title="Unforgiven^" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/806020/tooltip" src="https://riki.dotabuff.com/t/l/NEOATyYGIw.png">
+            <span class="radiant"><span>Unforgiven^</span></span>
+           </div></td>
+          <td>54:15
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 100.0%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T03:01:46+00:00" title="Tue, 24 Jan 2017 03:01:46 +0000" data-time-ago="2017-01-24T03:01:46+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4039/banner.png" alt="CDEC Classic" title="CDEC Classic" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4039/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4039">CDEC Classic</a></td>
+          <td><a href="/matches/2935080838">2935080838</a><small class="block"><time datetime="2017-01-24T02:57:20+00:00" title="Tue, 24 Jan 2017 02:57:20 +0000" data-time-ago="2017-01-24T02:57:20+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192509">Series 192509</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/oracle-4f33e6e1e1fdfeb62942ae3febd303403aa132613019b3b78b4f345ecb2e7533.jpg">
+            <img class="img-icon" src="/assets/heroes/ember-spirit-9ea0027b0e7ef22c0c491f35cb45fac3dd0aa3e58a93168d34ac43dbac57ba88.jpg">
+            <img class="img-icon" src="/assets/heroes/slark-8f2fc733dbcf61a1ee818a3e5f25022bea72ad75608ae1deb5ed47756c5d4d11.jpg">
+            <img class="img-icon" src="/assets/heroes/ogre-magi-bbd70011b89a269c249c8bd23d89deca65dcf126ba907946d596743b08ddc469.jpg">
+            <img class="img-icon" src="/assets/heroes/axe-388d58b177bffa44367ab04b03c7c81e767d50da5fd4c5a3d9dfd3113ffe7bd0.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/nyx-assassin-0ddd37113e00efd948aba22f8d00b674e2032b41ea9a4c05d29a6a05e5f2f839.jpg">
+            <img class="img-icon" src="/assets/heroes/dark-seer-ce0393cbf76eee6f96fe732958bf824e0da5c6ac1457df1dd6efbe07f4bf495b.jpg">
+            <img class="img-icon" src="/assets/heroes/juggernaut-5ff5b659184489f6a3a548de8dbd021dbb864698426b7d2550f41beb66bb45d8.jpg">
+            <img class="img-icon" src="/assets/heroes/sven-131f435f5f53454c380ca8a8cf249c3bba69f65a9c7a629f08b26936d13f5a6e.jpg">
+            <img class="img-icon" src="/assets/heroes/rubick-96df563c54e035adbc89d75afc1d65867ac5ee1159ac26e395e5265addf9e3f9.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="dire winner">Unknown</span>
+           </div>
+           <div>
+            <span class="radiant">Unknown</span>
+           </div></td>
+          <td>30:34
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 56.344086021505376%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:57:20+00:00" title="Tue, 24 Jan 2017 02:57:20 +0000" data-time-ago="2017-01-24T02:57:20+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4342/banner.png" alt="The Invitacional" title="The Invitacional" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4342/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4342">The Invitacional</a></td>
+          <td><a href="/matches/2935070518">2935070518</a><small class="block"><time datetime="2017-01-24T02:48:46+00:00" title="Tue, 24 Jan 2017 02:48:46 +0000" data-time-ago="2017-01-24T02:48:46+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192504">Series 192504</a><small class="block">South America</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire"><img alt="" title="The Last Punch" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2972513/tooltip" src="https://riki.dotabuff.com/t/l/aI2YVRUun3.png"><span>The Last Punch</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/shadow-fiend-38cb3cf5d391d5bab60015f795d88b4890d898a30887903e057f624dd8ac5a66.jpg">
+            <img class="img-icon" src="/assets/heroes/axe-388d58b177bffa44367ab04b03c7c81e767d50da5fd4c5a3d9dfd3113ffe7bd0.jpg">
+            <img class="img-icon" src="/assets/heroes/bounty-hunter-3be7197743d7a1240daa2e45295ac86af0b78b1a90862c9f3f46de8988dca7ed.jpg">
+            <img class="img-icon" src="/assets/heroes/omniknight-6e248fddcb25adbac76e128b31e905e0371e6f419a176b9966f1c1373a587e0e.jpg">
+            <img class="img-icon" src="/assets/heroes/witch-doctor-460e64cd1ebe4302c52e1f45708de4fcc6c6bf4919134cef6ed5eda42230fe2b.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant"><img alt="" title="TeamDamnation" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2754194/tooltip" src="https://riki.dotabuff.com/t/l/JuAmDmoLZT.png"><span>TeamDamnation</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/luna-fc878724cecefe8fb0f7d70ed19a57e9e892449d8999b7ea48b026cb9e7ca85b.jpg">
+            <img class="img-icon" src="/assets/heroes/templar-assassin-0bc46bcc77b4e9142ad943dc5bdf096455ae7802c4040c290aa4934a31905b0f.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-demon-920404f34046ed7f4a0b00027a0f8f21f0a578c7730928cd5f6d90f877f0aeb0.jpg">
+            <img class="img-icon" src="/assets/heroes/phoenix-9ea7d8c4005c7dd24c57c78b7d0b0e15f3bdf269ca6c93ce69b9cc75ffc9e39f.jpg">
+            <img class="img-icon" src="/assets/heroes/timbersaw-54e7c637219381a89c298a48be5f683248ad786e020e020ac95c87405eeaf801.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="The Last Punch" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2972513/tooltip" src="https://riki.dotabuff.com/t/l/aI2YVRUun3.png">
+            <span class="dire winner"><span>The Last Punch</span></span>
+           </div>
+           <div>
+            <img alt="" title="TeamDamnation" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2754194/tooltip" src="https://riki.dotabuff.com/t/l/JuAmDmoLZT.png">
+            <span class="radiant"><span>TeamDamnation</span></span>
+           </div></td>
+          <td>33:24
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 61.566820276497694%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:48:46+00:00" title="Tue, 24 Jan 2017 02:48:46 +0000" data-time-ago="2017-01-24T02:48:46+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935083327">2935083327</a><small class="block"><time datetime="2017-01-24T02:48:22+00:00" title="Tue, 24 Jan 2017 02:48:22 +0000" data-time-ago="2017-01-24T02:48:22+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192510">Series 192510</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/underlord-a73da5478ea37b1b8513ecae91c1b0488edd2e01c254b4aa0227637d1ae49410.jpg">
+            <img class="img-icon" src="/assets/heroes/lycan-be4f1a4119e8085042821137072cede8785b2fec75bfc74a7654b5af8ed021dd.jpg">
+            <img class="img-icon" src="/assets/heroes/earth-spirit-235b5a9c1d85cd554f74ca1caa98e8f4defcd14a2123d1c49d1ce52ac3b97c50.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-fiend-38cb3cf5d391d5bab60015f795d88b4890d898a30887903e057f624dd8ac5a66.jpg">
+            <img class="img-icon" src="/assets/heroes/necrophos-19085edab4b84494350b841020fb58c20225d642643397d2bfb1a5c0d32e38d7.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/doom-be2415742384270d7e4cbf956e6dfd4607536aad64ecdd06ee72a3b746572683.jpg">
+            <img class="img-icon" src="/assets/heroes/tidehunter-63d0d0b2531011d59a0ea3fe32ebbf59106f985c6684bd5955e1e4d5f50f794f.jpg">
+            <img class="img-icon" src="/assets/heroes/earthshaker-79d080ca6b882dd9d22dc0fdbc756cf2ae3caffce76cbdb7491c4c6a1342d85b.jpg">
+            <img class="img-icon" src="/assets/heroes/sniper-acba09aef6873c5735dd388a5be8bd1206211f3948106e322d282a65f8b84437.jpg">
+            <img class="img-icon" src="/assets/heroes/meepo-feadffb3c2f720bac7ca55e5e08096759537bfa727cc28cce9dc58538533568b.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="dire winner">Unknown</span>
+           </div>
+           <div>
+            <span class="radiant">Unknown</span>
+           </div></td>
+          <td>18:51
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 34.74654377880184%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:48:22+00:00" title="Tue, 24 Jan 2017 02:48:22 +0000" data-time-ago="2017-01-24T02:48:22+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/5026/banner.png" alt="AD2L Season 14" title="AD2L Season 14" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/5026/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/5026">AD2L Season 14</a></td>
+          <td><a href="/matches/2935066896">2935066896</a><small class="block"><time datetime="2017-01-24T02:38:40+00:00" title="Tue, 24 Jan 2017 02:38:40 +0000" data-time-ago="2017-01-24T02:38:40+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192502">Series 192502</a><small class="block">US East</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire"><img alt="" title="Potato." class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3619018/tooltip" src="https://riki.dotabuff.com/t/l/7b3TIgJWe2.png"><span>Potato.</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/centaur-warrunner-13843b01e9bff2e252b9415a6b57c108ed621a6defe6d16196a4d762f61ac388.jpg">
+            <img class="img-icon" src="/assets/heroes/queen-of-pain-026a5d48deab540b9ea1b67cad1b8dfe842306df0340d6f386ad98a93b545600.jpg">
+            <img class="img-icon" src="/assets/heroes/vengeful-spirit-53c9afa695ee2c961da207dad6dfca38cde5cf5b70c458b02f320b7b1d3e9968.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-demon-920404f34046ed7f4a0b00027a0f8f21f0a578c7730928cd5f6d90f877f0aeb0.jpg">
+            <img class="img-icon" src="/assets/heroes/sniper-acba09aef6873c5735dd388a5be8bd1206211f3948106e322d282a65f8b84437.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant"><img alt="" title="Team Ember" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3476135/tooltip" src="https://riki.dotabuff.com/t/l/Gf7OyvrjlO.png"><span>Team Ember</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/outworld-devourer-e0bc3ba6923bad56a4ca861b638ad9b98a6b383c7586aeb9bfff9240ba1a56f1.jpg">
+            <img class="img-icon" src="/assets/heroes/slardar-421320e93596ca21b50a3916a9952decdd6c6a3eb0dcc855a2b93cc9376bab8e.jpg">
+            <img class="img-icon" src="/assets/heroes/dark-seer-ce0393cbf76eee6f96fe732958bf824e0da5c6ac1457df1dd6efbe07f4bf495b.jpg">
+            <img class="img-icon" src="/assets/heroes/ogre-magi-bbd70011b89a269c249c8bd23d89deca65dcf126ba907946d596743b08ddc469.jpg">
+            <img class="img-icon" src="/assets/heroes/lone-druid-41daa2009bd00ec57aecab78797142c52b1480ae60c151bb2f4107397a6287fd.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Potato." class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3619018/tooltip" src="https://riki.dotabuff.com/t/l/7b3TIgJWe2.png">
+            <span class="dire winner"><span>Potato.</span></span>
+           </div>
+           <div>
+            <img alt="" title="Team Ember" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3476135/tooltip" src="https://riki.dotabuff.com/t/l/Gf7OyvrjlO.png">
+            <span class="radiant"><span>Team Ember</span></span>
+           </div></td>
+          <td>27:21
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 50.414746543778804%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:38:40+00:00" title="Tue, 24 Jan 2017 02:38:40 +0000" data-time-ago="2017-01-24T02:38:40+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935056788">2935056788</a><small class="block"><time datetime="2017-01-24T02:31:25+00:00" title="Tue, 24 Jan 2017 02:31:25 +0000" data-time-ago="2017-01-24T02:31:25+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192508">Series 192508</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/queen-of-pain-026a5d48deab540b9ea1b67cad1b8dfe842306df0340d6f386ad98a93b545600.jpg">
+            <img class="img-icon" src="/assets/heroes/jakiro-1909630a71adb094cd5b2afad1b92e386df3edc7f49a7397747d3a51f84614b1.jpg">
+            <img class="img-icon" src="/assets/heroes/tidehunter-63d0d0b2531011d59a0ea3fe32ebbf59106f985c6684bd5955e1e4d5f50f794f.jpg">
+            <img class="img-icon" src="/assets/heroes/monkey-king-861c9d6971a1a07eee7df237e1d1d5c9c81c64d2a8a96dff03d544274f94e9ea.jpg">
+            <img class="img-icon" src="/assets/heroes/ember-spirit-9ea0027b0e7ef22c0c491f35cb45fac3dd0aa3e58a93168d34ac43dbac57ba88.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/legion-commander-d6acecfb902d417a3be2bd80f02545b9fa2d09b70638d2f84ef479355316ec95.jpg">
+            <img class="img-icon" src="/assets/heroes/phoenix-9ea7d8c4005c7dd24c57c78b7d0b0e15f3bdf269ca6c93ce69b9cc75ffc9e39f.jpg">
+            <img class="img-icon" src="/assets/heroes/juggernaut-5ff5b659184489f6a3a548de8dbd021dbb864698426b7d2550f41beb66bb45d8.jpg">
+            <img class="img-icon" src="/assets/heroes/sand-king-677af1a9e081b4995921d3d8e023afcaa5fe9ae555fc45e01a15acf0a5dbc401.jpg">
+            <img class="img-icon" src="/assets/heroes/bane-33345db7f1ac350e2d91e4beac6bd98e3ce373c87f85e3c3eacb1c450d21fc5c.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="dire winner">Unknown</span>
+           </div>
+           <div>
+            <span class="radiant">Unknown</span>
+           </div></td>
+          <td>31:48
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 58.617511520737324%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:31:25+00:00" title="Tue, 24 Jan 2017 02:31:25 +0000" data-time-ago="2017-01-24T02:31:25+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4613/banner.png" alt="KOD League Season 2" title="KOD League Season 2" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4613/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4613">KOD League Season 2</a></td>
+          <td><a href="/matches/2935045630">2935045630</a><small class="block"><time datetime="2017-01-24T02:29:45+00:00" title="Tue, 24 Jan 2017 02:29:45 +0000" data-time-ago="2017-01-24T02:29:45+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192491">Series 192491</a><small class="block">US East</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire"><img alt="" title="Doo Wop" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3333433/tooltip" src="https://riki.dotabuff.com/t/l/IZhaMOJqCy.png"><span>Doo Wop</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/omniknight-6e248fddcb25adbac76e128b31e905e0371e6f419a176b9966f1c1373a587e0e.jpg">
+            <img class="img-icon" src="/assets/heroes/disruptor-b09196bbc7d501592b7c95b01260dfb5ae7bf5092a4e78011eb51c42a03308e6.jpg">
+            <img class="img-icon" src="/assets/heroes/ember-spirit-9ea0027b0e7ef22c0c491f35cb45fac3dd0aa3e58a93168d34ac43dbac57ba88.jpg">
+            <img class="img-icon" src="/assets/heroes/lone-druid-41daa2009bd00ec57aecab78797142c52b1480ae60c151bb2f4107397a6287fd.jpg">
+            <img class="img-icon" src="/assets/heroes/centaur-warrunner-13843b01e9bff2e252b9415a6b57c108ed621a6defe6d16196a4d762f61ac388.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant"><img alt="" title="Team Freedom Dota 2" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2701329/tooltip" src="https://riki.dotabuff.com/t/l/QiwxeK2bwR.png"><span>Team Freedom Dota 2</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/leshrac-02e15b259ef7b868a763b7f25521b693b3a90f8e01576d748e9527a5d9c14f76.jpg">
+            <img class="img-icon" src="/assets/heroes/luna-fc878724cecefe8fb0f7d70ed19a57e9e892449d8999b7ea48b026cb9e7ca85b.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-demon-920404f34046ed7f4a0b00027a0f8f21f0a578c7730928cd5f6d90f877f0aeb0.jpg">
+            <img class="img-icon" src="/assets/heroes/sand-king-677af1a9e081b4995921d3d8e023afcaa5fe9ae555fc45e01a15acf0a5dbc401.jpg">
+            <img class="img-icon" src="/assets/heroes/zeus-7c48a5be8113f547f9357e8557c7d5a1de24240f47fe95112b53cfa90d2fa690.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Doo Wop" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3333433/tooltip" src="https://riki.dotabuff.com/t/l/IZhaMOJqCy.png">
+            <span class="dire winner"><span>Doo Wop</span></span>
+           </div>
+           <div>
+            <img alt="" title="Team Freedom Dota 2" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2701329/tooltip" src="https://riki.dotabuff.com/t/l/QiwxeK2bwR.png">
+            <span class="radiant"><span>Team Freedom Dota 2</span></span>
+           </div></td>
+          <td>43:35
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 80.3379416282642%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:29:45+00:00" title="Tue, 24 Jan 2017 02:29:45 +0000" data-time-ago="2017-01-24T02:29:45+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935043846">2935043846</a><small class="block"><time datetime="2017-01-24T02:22:01+00:00" title="Tue, 24 Jan 2017 02:22:01 +0000" data-time-ago="2017-01-24T02:22:01+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192505">Series 192505</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/underlord-a73da5478ea37b1b8513ecae91c1b0488edd2e01c254b4aa0227637d1ae49410.jpg">
+            <img class="img-icon" src="/assets/heroes/ursa-07a7b988a93f38768f1a13730032a7ab2c639b8c7af7c1c3c13860fc00f51443.jpg">
+            <img class="img-icon" src="/assets/heroes/rubick-96df563c54e035adbc89d75afc1d65867ac5ee1159ac26e395e5265addf9e3f9.jpg">
+            <img class="img-icon" src="/assets/heroes/timbersaw-54e7c637219381a89c298a48be5f683248ad786e020e020ac95c87405eeaf801.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-demon-920404f34046ed7f4a0b00027a0f8f21f0a578c7730928cd5f6d90f877f0aeb0.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/luna-fc878724cecefe8fb0f7d70ed19a57e9e892449d8999b7ea48b026cb9e7ca85b.jpg">
+            <img class="img-icon" src="/assets/heroes/batrider-a5e99b51cab2b8dc251baf46eb8db0f70e97d1f9bf66f240169fdf6e1b7500db.jpg">
+            <img class="img-icon" src="/assets/heroes/outworld-devourer-e0bc3ba6923bad56a4ca861b638ad9b98a6b383c7586aeb9bfff9240ba1a56f1.jpg">
+            <img class="img-icon" src="/assets/heroes/weaver-8fdd43f5d122a395e0b8479908c387b76b6a5ced1d9d36d32b298236d2fd87e3.jpg">
+            <img class="img-icon" src="/assets/heroes/pudge-26ef8b6938086abf2edb2b4f9aebccf6f14bd20bae3962d1585e735929b2ba17.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="radiant winner">Unknown</span>
+           </div>
+           <div>
+            <span class="dire">Unknown</span>
+           </div></td>
+          <td>38:02
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 70.10752688172043%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:22:01+00:00" title="Tue, 24 Jan 2017 02:22:01 +0000" data-time-ago="2017-01-24T02:22:01+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935047293">2935047293</a><small class="block"><time datetime="2017-01-24T02:20:35+00:00" title="Tue, 24 Jan 2017 02:20:35 +0000" data-time-ago="2017-01-24T02:20:35+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192506">Series 192506</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/centaur-warrunner-13843b01e9bff2e252b9415a6b57c108ed621a6defe6d16196a4d762f61ac388.jpg">
+            <img class="img-icon" src="/assets/heroes/anti-mage-5707d88922e32502db4e80b7e68c2b1e0d26fbdb1abe437092ebe6fc7fa2da41.jpg">
+            <img class="img-icon" src="/assets/heroes/riki-1ba286123c6322b7b1a36a3e29a9807fa7eb598b9d3141727fdf12be0cf21729.jpg">
+            <img class="img-icon" src="/assets/heroes/tinker-a73a9eb1801599c2f03d7b8a5df30dd3d82e54bd92ac5f84c3b2d182cd3ea377.jpg">
+            <img class="img-icon" src="/assets/heroes/witch-doctor-460e64cd1ebe4302c52e1f45708de4fcc6c6bf4919134cef6ed5eda42230fe2b.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/shadow-demon-920404f34046ed7f4a0b00027a0f8f21f0a578c7730928cd5f6d90f877f0aeb0.jpg">
+            <img class="img-icon" src="/assets/heroes/storm-spirit-ba540ac6a89be049c3a33520c8384c9d441c6be06be3275972aa8d6159b82740.jpg">
+            <img class="img-icon" src="/assets/heroes/slark-8f2fc733dbcf61a1ee818a3e5f25022bea72ad75608ae1deb5ed47756c5d4d11.jpg">
+            <img class="img-icon" src="/assets/heroes/spirit-breaker-4c02ae76c8bb04d88a6a53f85acc1975cefeb821e5ba1481500e68493ff475dd.jpg">
+            <img class="img-icon" src="/assets/heroes/sand-king-677af1a9e081b4995921d3d8e023afcaa5fe9ae555fc45e01a15acf0a5dbc401.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="radiant winner">Unknown</span>
+           </div>
+           <div>
+            <span class="dire">Unknown</span>
+           </div></td>
+          <td>32:26
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 59.784946236559136%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T02:20:35+00:00" title="Tue, 24 Jan 2017 02:20:35 +0000" data-time-ago="2017-01-24T02:20:35+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4342/banner.png" alt="The Invitacional" title="The Invitacional" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4342/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4342">The Invitacional</a></td>
+          <td><a href="/matches/2935025446">2935025446</a><small class="block"><time datetime="2017-01-24T01:56:40+00:00" title="Tue, 24 Jan 2017 01:56:40 +0000" data-time-ago="2017-01-24T01:56:40+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192504">Series 192504</a><small class="block">South America</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant"><img alt="" title="The Last Punch" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2972513/tooltip" src="https://riki.dotabuff.com/t/l/aI2YVRUun3.png"><span>The Last Punch</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/ember-spirit-9ea0027b0e7ef22c0c491f35cb45fac3dd0aa3e58a93168d34ac43dbac57ba88.jpg">
+            <img class="img-icon" src="/assets/heroes/underlord-a73da5478ea37b1b8513ecae91c1b0488edd2e01c254b4aa0227637d1ae49410.jpg">
+            <img class="img-icon" src="/assets/heroes/winter-wyvern-befeecf938c49aefda1bd39cde4f6753b58b8c025f76ce76832f829cb4eee984.jpg">
+            <img class="img-icon" src="/assets/heroes/juggernaut-5ff5b659184489f6a3a548de8dbd021dbb864698426b7d2550f41beb66bb45d8.jpg">
+            <img class="img-icon" src="/assets/heroes/disruptor-b09196bbc7d501592b7c95b01260dfb5ae7bf5092a4e78011eb51c42a03308e6.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire"><img alt="" title="TeamDamnation" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2754194/tooltip" src="https://riki.dotabuff.com/t/l/JuAmDmoLZT.png"><span>TeamDamnation</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/axe-388d58b177bffa44367ab04b03c7c81e767d50da5fd4c5a3d9dfd3113ffe7bd0.jpg">
+            <img class="img-icon" src="/assets/heroes/storm-spirit-ba540ac6a89be049c3a33520c8384c9d441c6be06be3275972aa8d6159b82740.jpg">
+            <img class="img-icon" src="/assets/heroes/silencer-916e22da675ae74a6d44e0daf1b60bc18d230c81b072f5c8220a14e4fa2f4ac7.jpg">
+            <img class="img-icon" src="/assets/heroes/ogre-magi-bbd70011b89a269c249c8bd23d89deca65dcf126ba907946d596743b08ddc469.jpg">
+            <img class="img-icon" src="/assets/heroes/slark-8f2fc733dbcf61a1ee818a3e5f25022bea72ad75608ae1deb5ed47756c5d4d11.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="The Last Punch" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2972513/tooltip" src="https://riki.dotabuff.com/t/l/aI2YVRUun3.png">
+            <span class="radiant winner"><span>The Last Punch</span></span>
+           </div>
+           <div>
+            <img alt="" title="TeamDamnation" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2754194/tooltip" src="https://riki.dotabuff.com/t/l/JuAmDmoLZT.png">
+            <span class="dire"><span>TeamDamnation</span></span>
+           </div></td>
+          <td>36:10
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 66.66666666666667%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T01:56:40+00:00" title="Tue, 24 Jan 2017 01:56:40 +0000" data-time-ago="2017-01-24T01:56:40+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/2924/banner.png" alt="Mega Gamer UTFPR 2015" title="Mega Gamer UTFPR 2015" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/2924/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/2924">Mega Gamer UTFPR 2015</a></td>
+          <td><a href="/matches/2935024305">2935024305</a><small class="block"><time datetime="2017-01-24T01:45:41+00:00" title="Tue, 24 Jan 2017 01:45:41 +0000" data-time-ago="2017-01-24T01:45:41+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192503">Series 192503</a><small class="block">South America</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant"><img alt="" title="SadGamingBR" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/124086/tooltip" src="https://riki.dotabuff.com/t/l/VSoikJtqn1.png"><span>SadGamingBR</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/undying-d43c4ae1d6f0b4f6279a57b5bd7da2a403a20624f2bfe5862fa78a520c64161c.jpg">
+            <img class="img-icon" src="/assets/heroes/rubick-96df563c54e035adbc89d75afc1d65867ac5ee1159ac26e395e5265addf9e3f9.jpg">
+            <img class="img-icon" src="/assets/heroes/weaver-8fdd43f5d122a395e0b8479908c387b76b6a5ced1d9d36d32b298236d2fd87e3.jpg">
+            <img class="img-icon" src="/assets/heroes/lone-druid-41daa2009bd00ec57aecab78797142c52b1480ae60c151bb2f4107397a6287fd.jpg">
+            <img class="img-icon" src="/assets/heroes/tinker-a73a9eb1801599c2f03d7b8a5df30dd3d82e54bd92ac5f84c3b2d182cd3ea377.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire"><img alt="" title="TEAM BRAVE SOLDIERS E-SPORTS" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3549803/tooltip" src="https://riki.dotabuff.com/t/l/EkWdpqvkSA.png"><span>TEAM BRAVE SOLDIERS E-SPORTS</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/disruptor-b09196bbc7d501592b7c95b01260dfb5ae7bf5092a4e78011eb51c42a03308e6.jpg">
+            <img class="img-icon" src="/assets/heroes/juggernaut-5ff5b659184489f6a3a548de8dbd021dbb864698426b7d2550f41beb66bb45d8.jpg">
+            <img class="img-icon" src="/assets/heroes/dark-seer-ce0393cbf76eee6f96fe732958bf824e0da5c6ac1457df1dd6efbe07f4bf495b.jpg">
+            <img class="img-icon" src="/assets/heroes/lich-241a1e53b67cc5f3bb091cb847f56351404fd2645862337a07f7b6143d7733f6.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-fiend-38cb3cf5d391d5bab60015f795d88b4890d898a30887903e057f624dd8ac5a66.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="SadGamingBR" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/124086/tooltip" src="https://riki.dotabuff.com/t/l/VSoikJtqn1.png">
+            <span class="radiant winner"><span>SadGamingBR</span></span>
+           </div>
+           <div>
+            <img alt="" title="TEAM BRAVE SOLDIERS E-SPORTS" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3549803/tooltip" src="https://riki.dotabuff.com/t/l/EkWdpqvkSA.png">
+            <span class="dire"><span>TEAM BRAVE SOLDIERS E-SPORTS</span></span>
+           </div></td>
+          <td>26:43
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 49.24731182795699%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T01:45:41+00:00" title="Tue, 24 Jan 2017 01:45:41 +0000" data-time-ago="2017-01-24T01:45:41+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/5026/banner.png" alt="AD2L Season 14" title="AD2L Season 14" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/5026/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/5026">AD2L Season 14</a></td>
+          <td><a href="/matches/2935017754">2935017754</a><small class="block"><time datetime="2017-01-24T01:38:08+00:00" title="Tue, 24 Jan 2017 01:38:08 +0000" data-time-ago="2017-01-24T01:38:08+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192502">Series 192502</a><small class="block">US East</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant"><img alt="" title="Potato." class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3619018/tooltip" src="https://riki.dotabuff.com/t/l/7b3TIgJWe2.png"><span>Potato.</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/shadow-fiend-38cb3cf5d391d5bab60015f795d88b4890d898a30887903e057f624dd8ac5a66.jpg">
+            <img class="img-icon" src="/assets/heroes/crystal-maiden-d9d7e6cbea64990c492bd3adc66c3d6f738c9f229301f5284e43a318a1da9829.jpg">
+            <img class="img-icon" src="/assets/heroes/ursa-07a7b988a93f38768f1a13730032a7ab2c639b8c7af7c1c3c13860fc00f51443.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-demon-920404f34046ed7f4a0b00027a0f8f21f0a578c7730928cd5f6d90f877f0aeb0.jpg">
+            <img class="img-icon" src="/assets/heroes/slardar-421320e93596ca21b50a3916a9952decdd6c6a3eb0dcc855a2b93cc9376bab8e.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire"><img alt="" title="Team Ember" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3476135/tooltip" src="https://riki.dotabuff.com/t/l/Gf7OyvrjlO.png"><span>Team Ember</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/axe-388d58b177bffa44367ab04b03c7c81e767d50da5fd4c5a3d9dfd3113ffe7bd0.jpg">
+            <img class="img-icon" src="/assets/heroes/queen-of-pain-026a5d48deab540b9ea1b67cad1b8dfe842306df0340d6f386ad98a93b545600.jpg">
+            <img class="img-icon" src="/assets/heroes/underlord-a73da5478ea37b1b8513ecae91c1b0488edd2e01c254b4aa0227637d1ae49410.jpg">
+            <img class="img-icon" src="/assets/heroes/disruptor-b09196bbc7d501592b7c95b01260dfb5ae7bf5092a4e78011eb51c42a03308e6.jpg">
+            <img class="img-icon" src="/assets/heroes/vengeful-spirit-53c9afa695ee2c961da207dad6dfca38cde5cf5b70c458b02f320b7b1d3e9968.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Potato." class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3619018/tooltip" src="https://riki.dotabuff.com/t/l/7b3TIgJWe2.png">
+            <span class="radiant winner"><span>Potato.</span></span>
+           </div>
+           <div>
+            <img alt="" title="Team Ember" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3476135/tooltip" src="https://riki.dotabuff.com/t/l/Gf7OyvrjlO.png">
+            <span class="dire"><span>Team Ember</span></span>
+           </div></td>
+          <td>28:07
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 51.82795698924731%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T01:38:08+00:00" title="Tue, 24 Jan 2017 01:38:08 +0000" data-time-ago="2017-01-24T01:38:08+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935009696">2935009696</a><small class="block"><time datetime="2017-01-24T01:35:00+00:00" title="Tue, 24 Jan 2017 01:35:00 +0000" data-time-ago="2017-01-24T01:35:00+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192500">Series 192500</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/storm-spirit-ba540ac6a89be049c3a33520c8384c9d441c6be06be3275972aa8d6159b82740.jpg">
+            <img class="img-icon" src="/assets/heroes/timbersaw-54e7c637219381a89c298a48be5f683248ad786e020e020ac95c87405eeaf801.jpg">
+            <img class="img-icon" src="/assets/heroes/bounty-hunter-3be7197743d7a1240daa2e45295ac86af0b78b1a90862c9f3f46de8988dca7ed.jpg">
+            <img class="img-icon" src="/assets/heroes/disruptor-b09196bbc7d501592b7c95b01260dfb5ae7bf5092a4e78011eb51c42a03308e6.jpg">
+            <img class="img-icon" src="/assets/heroes/phantom-assassin-9ede63e7fcb4765e4c5f0cc28174513a1e3171a49295aaa8f552f1f20c241a87.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/ogre-magi-bbd70011b89a269c249c8bd23d89deca65dcf126ba907946d596743b08ddc469.jpg">
+            <img class="img-icon" src="/assets/heroes/outworld-devourer-e0bc3ba6923bad56a4ca861b638ad9b98a6b383c7586aeb9bfff9240ba1a56f1.jpg">
+            <img class="img-icon" src="/assets/heroes/dark-seer-ce0393cbf76eee6f96fe732958bf824e0da5c6ac1457df1dd6efbe07f4bf495b.jpg">
+            <img class="img-icon" src="/assets/heroes/morphling-f168ec62b395236f962e56205a767959d3211ebb8782c6a00740ca4eeca6f52e.jpg">
+            <img class="img-icon" src="/assets/heroes/legion-commander-d6acecfb902d417a3be2bd80f02545b9fa2d09b70638d2f84ef479355316ec95.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="dire winner">Unknown</span>
+           </div>
+           <div>
+            <span class="radiant">Unknown</span>
+           </div></td>
+          <td>36:13
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 66.75883256528418%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T01:35:00+00:00" title="Tue, 24 Jan 2017 01:35:00 +0000" data-time-ago="2017-01-24T01:35:00+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4342/banner.png" alt="The Invitacional" title="The Invitacional" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4342/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4342">The Invitacional</a></td>
+          <td><a href="/matches/2935004506">2935004506</a><small class="block"><time datetime="2017-01-24T01:34:40+00:00" title="Tue, 24 Jan 2017 01:34:40 +0000" data-time-ago="2017-01-24T01:34:40+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192499">Series 192499</a><small class="block">South America</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire"><img alt="" title="Pure Touch Me Rats" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2734862/tooltip" src="https://riki.dotabuff.com/t/l/acbTKnraBa.png"><span>Pure Touch Me Rats</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/juggernaut-5ff5b659184489f6a3a548de8dbd021dbb864698426b7d2550f41beb66bb45d8.jpg">
+            <img class="img-icon" src="/assets/heroes/riki-1ba286123c6322b7b1a36a3e29a9807fa7eb598b9d3141727fdf12be0cf21729.jpg">
+            <img class="img-icon" src="/assets/heroes/weaver-8fdd43f5d122a395e0b8479908c387b76b6a5ced1d9d36d32b298236d2fd87e3.jpg">
+            <img class="img-icon" src="/assets/heroes/slardar-421320e93596ca21b50a3916a9952decdd6c6a3eb0dcc855a2b93cc9376bab8e.jpg">
+            <img class="img-icon" src="/assets/heroes/oracle-4f33e6e1e1fdfeb62942ae3febd303403aa132613019b3b78b4f345ecb2e7533.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant"><img alt="" title="Unforgiven^" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/806020/tooltip" src="https://riki.dotabuff.com/t/l/NEOATyYGIw.png"><span>Unforgiven^</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/queen-of-pain-026a5d48deab540b9ea1b67cad1b8dfe842306df0340d6f386ad98a93b545600.jpg">
+            <img class="img-icon" src="/assets/heroes/earth-spirit-235b5a9c1d85cd554f74ca1caa98e8f4defcd14a2123d1c49d1ce52ac3b97c50.jpg">
+            <img class="img-icon" src="/assets/heroes/rubick-96df563c54e035adbc89d75afc1d65867ac5ee1159ac26e395e5265addf9e3f9.jpg">
+            <img class="img-icon" src="/assets/heroes/dark-seer-ce0393cbf76eee6f96fe732958bf824e0da5c6ac1457df1dd6efbe07f4bf495b.jpg">
+            <img class="img-icon" src="/assets/heroes/anti-mage-5707d88922e32502db4e80b7e68c2b1e0d26fbdb1abe437092ebe6fc7fa2da41.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Pure Touch Me Rats" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2734862/tooltip" src="https://riki.dotabuff.com/t/l/acbTKnraBa.png">
+            <span class="dire winner"><span>Pure Touch Me Rats</span></span>
+           </div>
+           <div>
+            <img alt="" title="Unforgiven^" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/806020/tooltip" src="https://riki.dotabuff.com/t/l/NEOATyYGIw.png">
+            <span class="radiant"><span>Unforgiven^</span></span>
+           </div></td>
+          <td>43:19
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 79.84639016897081%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T01:34:40+00:00" title="Tue, 24 Jan 2017 01:34:40 +0000" data-time-ago="2017-01-24T01:34:40+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4539/banner.png" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4539/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4539">/esports/leagues/4539</a></td>
+          <td><a href="/matches/2935014991">2935014991</a><small class="block"><time datetime="2017-01-24T01:33:20+00:00" title="Tue, 24 Jan 2017 01:33:20 +0000" data-time-ago="2017-01-24T01:33:20+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192501">Series 192501</a><small class="block">China</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="dire">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/pudge-26ef8b6938086abf2edb2b4f9aebccf6f14bd20bae3962d1585e735929b2ba17.jpg">
+            <img class="img-icon" src="/assets/heroes/kunkka-38d1d71c26b8c95b5bd783bc7cb3a29edf211acd6b8d4360679bf4774d7556b4.jpg">
+            <img class="img-icon" src="/assets/heroes/ember-spirit-9ea0027b0e7ef22c0c491f35cb45fac3dd0aa3e58a93168d34ac43dbac57ba88.jpg">
+            <img class="img-icon" src="/assets/heroes/luna-fc878724cecefe8fb0f7d70ed19a57e9e892449d8999b7ea48b026cb9e7ca85b.jpg">
+            <img class="img-icon" src="/assets/heroes/clockwerk-ceaf0265b3f2ea055ea032ad92ffa5a87a2d9a13f97517e7f9738ab17c9d1e73.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="radiant">Unknown</span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/axe-388d58b177bffa44367ab04b03c7c81e767d50da5fd4c5a3d9dfd3113ffe7bd0.jpg">
+            <img class="img-icon" src="/assets/heroes/slardar-421320e93596ca21b50a3916a9952decdd6c6a3eb0dcc855a2b93cc9376bab8e.jpg">
+            <img class="img-icon" src="/assets/heroes/morphling-f168ec62b395236f962e56205a767959d3211ebb8782c6a00740ca4eeca6f52e.jpg">
+            <img class="img-icon" src="/assets/heroes/earthshaker-79d080ca6b882dd9d22dc0fdbc756cf2ae3caffce76cbdb7491c4c6a1342d85b.jpg">
+            <img class="img-icon" src="/assets/heroes/shadow-fiend-38cb3cf5d391d5bab60015f795d88b4890d898a30887903e057f624dd8ac5a66.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <span class="dire winner">Unknown</span>
+           </div>
+           <div>
+            <span class="radiant">Unknown</span>
+           </div></td>
+          <td>27:05
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 49.92319508448541%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T01:33:20+00:00" title="Tue, 24 Jan 2017 01:33:20 +0000" data-time-ago="2017-01-24T01:33:20+00:00">2017-01-24</time></small></td>
+         </tr>
+         <tr>
+          <td><img src="https://riki.dotabuff.com/leagues/4613/banner.png" alt="KOD League Season 2" title="KOD League Season 2" class="img-league img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/leagues/4613/tooltip"></td>
+          <td class="r-none-tablet"><a href="/esports/leagues/4613">KOD League Season 2</a></td>
+          <td><a href="/matches/2935005988">2935005988</a><small class="block"><time datetime="2017-01-24T01:23:36+00:00" title="Tue, 24 Jan 2017 01:23:36 +0000" data-time-ago="2017-01-24T01:23:36+00:00">2017-01-24</time></small></td>
+          <td class="r-none-mobile"><a href="/esports/series/192491">Series 192491</a><small class="block">US East</small></td>
+          <td class="cell-xlarge r-none-mobile winner"><span class="radiant"><img alt="" title="Doo Wop" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3333433/tooltip" src="https://riki.dotabuff.com/t/l/IZhaMOJqCy.png"><span>Doo Wop</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/spirit-breaker-4c02ae76c8bb04d88a6a53f85acc1975cefeb821e5ba1481500e68493ff475dd.jpg">
+            <img class="img-icon" src="/assets/heroes/rubick-96df563c54e035adbc89d75afc1d65867ac5ee1159ac26e395e5265addf9e3f9.jpg">
+            <img class="img-icon" src="/assets/heroes/ember-spirit-9ea0027b0e7ef22c0c491f35cb45fac3dd0aa3e58a93168d34ac43dbac57ba88.jpg">
+            <img class="img-icon" src="/assets/heroes/clinkz-9cc7cf374e345bc663a53d037ae93550bc543ef1280642af6da4c82e04d4becc.jpg">
+            <img class="img-icon" src="/assets/heroes/dark-seer-ce0393cbf76eee6f96fe732958bf824e0da5c6ac1457df1dd6efbe07f4bf495b.jpg">
+           </div></td>
+          <td class="cell-xlarge r-none-mobile"><span class="dire"><img alt="" title="Team Freedom Dota 2" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2701329/tooltip" src="https://riki.dotabuff.com/t/l/QiwxeK2bwR.png"><span>Team Freedom Dota 2</span></span>
+           <div>
+            <img class="img-icon" src="/assets/heroes/leshrac-02e15b259ef7b868a763b7f25521b693b3a90f8e01576d748e9527a5d9c14f76.jpg">
+            <img class="img-icon" src="/assets/heroes/sven-131f435f5f53454c380ca8a8cf249c3bba69f65a9c7a629f08b26936d13f5a6e.jpg">
+            <img class="img-icon" src="/assets/heroes/io-0b6351fcf52883bd8ac94a4245b1f609619b4aff4d22ca22f3f3d5a6a066834a.jpg">
+            <img class="img-icon" src="/assets/heroes/bristleback-dfafb7f96bcff7862365db9b897c4b66994202b2dafa803529047661b4bae553.jpg">
+            <img class="img-icon" src="/assets/heroes/omniknight-6e248fddcb25adbac76e128b31e905e0371e6f419a176b9966f1c1373a587e0e.jpg">
+           </div></td>
+          <td class="r-only-mobile">
+           <div>
+            <img alt="" title="Doo Wop" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/3333433/tooltip" src="https://riki.dotabuff.com/t/l/IZhaMOJqCy.png">
+            <span class="radiant winner"><span>Doo Wop</span></span>
+           </div>
+           <div>
+            <img alt="" title="Team Freedom Dota 2" class="img-team img-avatar" rel="tooltip-remote" data-tooltip-url="/esports/teams/2701329/tooltip" src="https://riki.dotabuff.com/t/l/QiwxeK2bwR.png">
+            <span class="dire"><span>Team Freedom Dota 2</span></span>
+           </div></td>
+          <td>30:06
+           <div class="bar bar-default">
+            <div class="segment segment-duration" style="width: 55.483870967741936%;"></div>
+           </div><small class="block r-only-mobile"><time datetime="2017-01-24T01:23:36+00:00" title="Tue, 24 Jan 2017 01:23:36 +0000" data-time-ago="2017-01-24T01:23:36+00:00">2017-01-24</time></small></td>
+         </tr>
+        </tbody>
+       </table>
+       <div class="viewport">
+        1 - 20 of 1000
+       </div>
+       <nav class="pagination">
+        <span class="page current"> 1 </span>
+        <span class="page"> <a rel="next" href="/esports/matches?page=2">2</a> </span>
+        <span class="page"> <a href="/esports/matches?page=3">3</a> </span>
+        <span class="page"> <a href="/esports/matches?page=4">4</a> </span>
+        <span class="page"> <a href="/esports/matches?page=5">5</a> </span>
+        <span class="page gap">…</span>
+        <span class="next"> <a rel="next" href="/esports/matches?page=2">Next ›</a> </span>
+        <span class="last"> <a href="/esports/matches?page=50">Last »</a> </span>
+       </nav>
+      </article>
+     </section>
+     <div id="kunkka-bottom-leaderboard" class="kunkka-unit kunkka-leaderboard"></div>
+    </div>
+    <div class="footer-nav-primary">
+     <nav class="footer-nav-primary-locales">
+      <ul class="dropit">
+       <li class="dropit-trigger"><a class="current-locale" href="#">
+         <div class="flag flag-en"></div>English (English)<span class="arrow-selector">▴</span></a>
+        <ul class="dropit-submenu">
+         <li><a href="//bg.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-bg"></div>български (Bulgarian)</a></li>
+         <li><a href="//cs.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-cs"></div>Čeština (Czech)</a></li>
+         <li><a href="//de.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-de"></div>Deutsch (German)</a></li>
+         <li class="active"><a href="//www.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-en"></div>English (English)<i class="fa fa-check"></i></a></li>
+         <li><a href="//es.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-es"></div>Español (Spanish)</a></li>
+         <li><a href="//fr.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-fr"></div>Français (French)</a></li>
+         <li><a href="//it.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-it"></div>Italiano (Italian)</a></li>
+         <li><a href="//ka.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-ka"></div>ქართული (Georgian)</a></li>
+         <li><a href="//ko.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-ko"></div>한국어 (Korean)</a></li>
+         <li><a href="//pl.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-pl"></div>polski (Polish)</a></li>
+         <li><a href="//pt.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-pt"></div>Português (Portuguese)</a></li>
+         <li><a href="//ru.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-ru"></div>Русский (Russian)</a></li>
+         <li><a href="//sr.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-sr"></div>српски (Serbian)</a></li>
+         <li><a href="//tr.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-tr"></div>Türkçe (Turkish)</a></li>
+         <li><a href="//uk.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-uk"></div>українська (Ukrainian)</a></li>
+         <li><a href="//zh.dotabuff.com/esports/matches?page=1">
+           <div class="flag flag-zh"></div>中文 (Chinese)</a></li>
+        </ul></li>
+      </ul>
+     </nav>
+     <div class="footer-nav-right">
+      <nav>
+       <ul>
+        <li><a href="/pages/about">About</a></li>
+        <li><a href="/pages/faq">FAQ</a></li>
+        <li><a href="/pages/about#support">Support</a></li>
+        <li><a href="/pages/privacy">Privacy</a></li>
+        <li><a target="_blank" rel="noopener" data-track-outgoing="true" href="https://dotabuff.statuspage.io">Service Status</a></li>
+        <li><a href="/pages/translate">Help Translate!</a></li>
+        <li><a target="_blank" rel="noopener" data-track-outgoing="true" href="http://www.trackdota.com">TrackDota</a></li>
+        <li><a target="_blank" rel="noopener" data-track-outgoing="true" href="https://www.overbuff.com">Overbuff</a></li>
+        <li><a class="color-brand-facebook" target="_blank" rel="noopener" data-track-outgoing="true" href="https://www.facebook.com/dotabuff"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="color-brand-twitter" target="_blank" rel="noopener" data-track-outgoing="true" href="https://twitter.com/dotabuff"><i class="fa fa-twitter"></i></a></li>
+       </ul>
+      </nav>
+     </div>
+    </div>
+    <div class="footer-nav-secondary">
+     Copyright 2017 Elo Entertainment LLC. Dota 2 is a registered trademark of Valve Corporation.
+     <div class="footer-nav-right footer-nav-right-crave">
+      Premium advertising by GameRevolution
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="modal" id="plus-feature" style="display: none">
+   <section>
+    <header class="premium">
+     Dotabuff Plus
+    </header>
+    <footer style="max-width: 600px">
+     <p><em>This feature is only available to Dotabuff Plus members.</em></p>
+     <p style="padding: 8px 0 0 0">Support from Plus members keep Dotabuff running and help enable us to deliver new features for everyone. As a reward, some features that are difficult or expensive to operate are available only to Plus members. Additionally, Plus members never see any advertisements!</p>
+     <p style="padding: 12px 0 0 0"><a class="button button-premium" href="/plus">Tell me more...</a> <a class="button button-muted simplemodal-close" href="/plus">Nevermind</a></p>
+    </footer>
+   </section>
+  </div>
+  <div id="kunkka-skin" class="kunkka-unit kunkka-skin"></div>
+  <!-- Quantcast Tag -->
+  <script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-kE_YTEQhq5e4s"
+});
+</script>
+  <noscript>
+   <div style="display:none;">
+    <img src="//pixel.quantserve.com/pixel/p-kE_YTEQhq5e4s.gif" border="0" height="1" width="1" alt="Quantcast">
+   </div>
+  </noscript>
+  <!-- End Quantcast tag -->
+  <!-- Quantcast Tag -->
+  <script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-99TeGITExdEz-"
+});
+</script>
+  <noscript>
+   <div style="display:none;">
+    <img src="//pixel.quantserve.com/pixel/p-99TeGITExdEz-.gif" border="0" height="1" width="1" alt="Quantcast">
+   </div>
+  </noscript>
+  <!-- End Quantcast tag -->
+ </body>
+</html>
+Hello World!
+
+Process finished with exit code 0
